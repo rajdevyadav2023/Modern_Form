@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+body {
+    background-color: #f1f1ff;
+    position: relative;
+}
+
+.container {
+    padding: 2rem 3rem;
+    width: 90%;
+    margin: auto;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background-color: white;
+    width: 60%;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #80808048, 0px 0px 18px #80808051;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.form h2{
+    width: 100%;
+    color: #098;
+    text-align: center;
+    padding: 1rem 0;
+}
+.form-control {
+    padding: .3rem;
+    width: 45%;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: .5rem;
+    color: gray;
+}
+
+.form-control input {
+    height: 45px;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #f1f1f1;
+    outline: none;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all .5s ease;
+    color: gray;
+}
+.form-control input:focus{
+    /* border: 1px solid green; */
+    box-shadow: 0px 0px 5px #80808048, 0px 0px 18px #80808051;
+    background-color: #fff;
+}
+.form-control input::placeholder{
+    color: gray;
+}
+.form-control p{
+    font-size: 14px;
+    background-color: #c5334c;
+    margin-top: .5rem;
+    color: white;
+    padding: .2rem;
+}
+.controls{
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.controls button{
+    padding: .8rem 2rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #098;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.controls .back-btn:hover, .controls .back-btn:focus{
+    background-color: orange;
+}
+.controls .submit-btn:hover, .controls .submit-btn:focus{
+    background-color: green;
+}
+/* #coder  */
+.coder{
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+    color: gray;
+}
+/* ------------------------------------------------------ */
+@media screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .form{
+        width: 95%;
+    }
+    .form-control {
+        padding: .3rem;
+        width: 100%;
+    }
+    .coder{
+        display: none;
+    }
+}
+
